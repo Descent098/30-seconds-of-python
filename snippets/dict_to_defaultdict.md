@@ -21,7 +21,6 @@ def dict_to_defaultdict(original_dict, default):
 ```py
 user = {'Name':'John',
 'Age':13}
-
 user = dict_to_defaultdict(user, lambda:False) # defaultdict(<function <lambda> at 0x000002CF4C278E50>, {'Name': 'John', 'Age': 13})
 user['Non existant Key'] # Returns False
 ```
